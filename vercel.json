@@ -1,0 +1,24 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "functions": {
+    "api/webhook.js": {
+      "maxDuration": 15
+    },
+    "api/create-transaction.js": {
+      "maxDuration": 15
+    },
+    "api/transaction-status.js": {
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(webhook|create-transaction|transaction-status)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    }
+  ]
+}

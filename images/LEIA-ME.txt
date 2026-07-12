@@ -1,0 +1,7 @@
+Coloque aqui as imagens do site:
+- favicon.png
+- icone.png
+- banner.jpg
+- cachorromachucado1.jpg
+- cachorromachucado2.jpg
+- cachorromachucado3.jpg
